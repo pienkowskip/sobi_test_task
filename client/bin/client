@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require 'sobi_client'
+require 'securerandom'
+
+raise 'Bike ID not specified' unless ARGV[0]
+
+client = SobiClient.new(ARGV[0])
+
+characters_range = [*'0'..'9', *'A'..'Z', *'a'..'z'].freeze # I assume that random string only consist readable characters. It's easier to debug, but could be anything.
+
+loop do
+  message = Array.new(160) { characters_range.sample }.join
+  client.send_message(message)
+  sleep(rand(5..10))
+end
+
