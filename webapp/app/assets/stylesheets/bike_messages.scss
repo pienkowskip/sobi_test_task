@@ -1,0 +1,25 @@
+// Place all the styles related to the BikeMessages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.bike {
+  padding: 1pc;
+  clear: both;
+  float: left;
+  
+  > h3 {
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  > ul {
+    padding: 0;
+
+    > .message {
+      font-size: xx-small;
+      font-family: monospace;
+      line-height: 150%;
+      white-space: nowrap;
+    }
+  }
+}

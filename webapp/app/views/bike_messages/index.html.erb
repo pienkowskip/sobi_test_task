@@ -1,0 +1,12 @@
+<h1>Bike messages list</h1>
+<% @bikes.each do |bike_id, messages| %>
+    <div class="bike">
+      <h3>Bike&nbsp;#<%= bike_id %></h3>
+      <ul>
+      <% messages.each do |message| %>
+        <li class="message"><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+<% end %>
+

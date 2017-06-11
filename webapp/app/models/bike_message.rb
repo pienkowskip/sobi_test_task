@@ -1,0 +1,2 @@
+class BikeMessage < ApplicationRecord
+end
