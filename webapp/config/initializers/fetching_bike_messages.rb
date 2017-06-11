@@ -1,0 +1,1 @@
+BikeMessagesFetchJob.perform_later
